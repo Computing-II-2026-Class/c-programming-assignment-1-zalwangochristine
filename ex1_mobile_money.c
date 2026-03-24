@@ -9,15 +9,15 @@ int main() {
     printf("Enter amount to send: ");
     scanf("%f", &amount);
 
-    printf("Enter transaction fee (%%): ");
+    printf("Enter transaction fee (%): ");
     scanf("%f", &feePercent);
 
     feeAmount = (feePercent / 100) * amount;
-    totalDeducted = amount + feeAmount;
+    totalDeducted = (amount + feeAmount);
 
     printf("\n----- TRANSACTION SUMMARY -----\n");
-    printf("Amount Sent: %.2f UGX\n", amount);
-    printf("Fee: %.2f UGX\n", feeAmount);
+    printf("Amount Sent: %.2f UGX\n", feeamount);
+    
     printf("Total Deducted: %.2f UGX\n", totalDeducted);
     printf("--------------------------------\n");
 
